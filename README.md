@@ -12,11 +12,17 @@ Flutter Status Overlay is a customizable, easy-to-use package for displaying sta
 - Dismissible by tapping outside the message area
 
 ## Screenshots & Demo
-<table>
-  <tr>
-    <td><img src="screenshots/screenshot1.png" style="height: 500px; width: auto;"></td>
-    <td><img src="screenshots/screenshot2.png" style="height: 500px; width: auto;"></td>
-    <td><img src="screenshots/demo.gif" style="height: 500px; width: auto;" alt="Flutter Status Overlay Demo"></td>
+<table style="border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td style="border: none; padding: 0;">
+      <img src="screenshots/screenshot1.png" style="max-height: 400px; width: auto; display: block;">
+    </td>
+    <td style="border: none; padding: 0;">
+      <img src="screenshots/screenshot2.png" style="max-height: 400px; width: auto; display: block;">
+    </td>
+    <td style="border: none; padding: 0;">
+      <img src="screenshots/demo.gif" style="max-height: 400px; width: auto; display: block;" alt="Flutter Status Overlay Demo">
+    </td>
   </tr>
 </table>
 
