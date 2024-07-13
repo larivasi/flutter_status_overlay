@@ -11,6 +11,15 @@ Flutter Status Overlay is a customizable, easy-to-use package for displaying sta
 - Easy to integrate into any Flutter application
 - Dismissible by tapping outside the message area
 
+## Screenshots
+<table>
+  <tr>
+    <td><img src="screenshots/screenshot1.png" width="300"></td>
+    <td><img src="screenshots/screenshot2.png" width="300"></td>
+  </tr>
+</table>
+
+
 ## Installation
 
 Add this to your package's `pubspec.yaml` file:
