@@ -14,12 +14,11 @@ Flutter Status Overlay is a customizable, easy-to-use package for displaying sta
 ## Screenshots & Demo
 <table>
   <tr>
-    <td><img src="screenshots/screenshot1.png" style="width: 300px; height: 600px; object-fit: cover;"></td>
-    <td><img src="screenshots/screenshot2.png" style="width: 300px; height: 600px; object-fit: cover;"></td>
-    <td><img src="screenshots/demo.gif" style="width: 300px; height: 600px; object-fit: cover;" alt="Flutter Status Overlay Demo"></td>
+    <td><img src="screenshots/screenshot1.png" style="height: 500px; width: auto;"></td>
+    <td><img src="screenshots/screenshot2.png" style="height: 500px; width: auto;"></td>
+    <td><img src="screenshots/demo.gif" style="height: 500px; width: auto;" alt="Flutter Status Overlay Demo"></td>
   </tr>
 </table>
-
 
 This demonstration showcases the key features of Flutter Status Overlay:
 
