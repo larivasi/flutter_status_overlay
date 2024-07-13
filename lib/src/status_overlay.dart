@@ -18,7 +18,7 @@ class StatusOverlay extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _StatusOverlayState createState() => _StatusOverlayState();
+  StatusOverlayState createState() => StatusOverlayState();
 
   static void show(
       BuildContext context, {
@@ -39,11 +39,11 @@ class StatusOverlay extends StatefulWidget {
       builder: (context) => overlay,
     );
 
-    overlayState?.insert(overlayEntry);
+    overlayState.insert(overlayEntry);
   }
 }
 
-class _StatusOverlayState extends State<StatusOverlay> with SingleTickerProviderStateMixin {
+class StatusOverlayState extends State<StatusOverlay> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<Offset> _offsetAnimation;
   Timer? _dismissTimer;
@@ -103,67 +103,65 @@ class _StatusOverlayState extends State<StatusOverlay> with SingleTickerProvider
 
   @override
   Widget build(BuildContext context) {
-    if (_overlayEntry == null) {
-      _overlayEntry = OverlayEntry(
-        builder: (context) => Material(
-          color: Colors.transparent,
-          child: Stack(
-            children: [
-              GestureDetector(
-                onTap: () {
-                  _dismissTimer?.cancel();
-                  _controller.reverse().then((_) => _removeOverlay());
-                },
-                child: Container(
-                  color: Colors.black.withOpacity(0.5),
-                ),
+    _overlayEntry ??= OverlayEntry(
+      builder: (context) => Material(
+        color: Colors.transparent,
+        child: Stack(
+          children: [
+            GestureDetector(
+              onTap: () {
+                _dismissTimer?.cancel();
+                _controller.reverse().then((_) => _removeOverlay());
+              },
+              child: Container(
+                color: Colors.black.withOpacity(0.5),
               ),
-              Positioned(
-                top: 0,
-                left: 0,
-                right: 0,
-                child: SlideTransition(
-                  position: _offsetAnimation,
-                  child: Material(
-                    color: _getOverlayColor(),
-                    child: SafeArea(
-                      child: Container(
-                        width: MediaQuery.of(context).size.width,
-                        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              widget.title,
-                              style: const TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
-                                decoration: TextDecoration.none,
-                              ),
+            ),
+            Positioned(
+              top: 0,
+              left: 0,
+              right: 0,
+              child: SlideTransition(
+                position: _offsetAnimation,
+                child: Material(
+                  color: _getOverlayColor(),
+                  child: SafeArea(
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            widget.title,
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                              decoration: TextDecoration.none,
                             ),
-                            const SizedBox(height: 4),
-                            Text(
-                              widget.message,
-                              style: const TextStyle(
-                                color: Colors.white,
-                                fontSize: 16,
-                                decoration: TextDecoration.none,
-                              ),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            widget.message,
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                              decoration: TextDecoration.none,
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
-      );
-    }
+      ),
+    );
 
     return Overlay(
       initialEntries: [_overlayEntry!],
