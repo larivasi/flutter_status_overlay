@@ -20,8 +20,7 @@ dependencies:
   flutter_status_overlay: ^0.0.1
   ```
 ## Then run:
-```$ flutter pub get
-```
+`$ flutter pub get`
 
 ## Usage
 
