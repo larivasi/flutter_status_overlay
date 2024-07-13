@@ -16,6 +16,7 @@ Flutter Status Overlay is a customizable, easy-to-use package for displaying sta
   <tr>
     <td><img src="screenshots/screenshot1.png" width="300"></td>
     <td><img src="screenshots/screenshot2.png" width="300"></td>
+    <td><img src="screenshots/demo.gif" width="300" alt="Flutter Status Overlay Demo"></td>
   </tr>
 </table>
 
