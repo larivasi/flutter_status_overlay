@@ -1,6 +1,6 @@
 name: flutter_status_overlay
 description: A versatile and easy-to-use package for displaying customizable status messages in Flutter apps. Enhance user feedback with elegant overlays for both error and success notifications.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/larivasi/flutter_status_overlay
 tags: [flutter, overlay, status, error, success, notification, message, feedback]
 
