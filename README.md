@@ -15,13 +15,13 @@ Flutter Status Overlay is a customizable, easy-to-use package for displaying sta
 <table style="border-collapse: collapse; border: none;">
   <tr style="border: none;">
     <td style="border: none; padding: 0;">
-      <img src="screenshots/screenshot1.png" style="max-height: 400px; width: auto; display: block;">
+      <img src="https://raw.githubusercontent.com/larivasi/flutter_status_overlay/main/screenshots/screenshot1.png" style="max-height: 400px; width: auto; display: block;">
     </td>
     <td style="border: none; padding: 0;">
-      <img src="screenshots/screenshot2.png" style="max-height: 400px; width: auto; display: block;">
+      <img src="https://raw.githubusercontent.com/larivasi/flutter_status_overlay/main/screenshots/screenshot2.png" style="max-height: 400px; width: auto; display: block;">
     </td>
     <td style="border: none; padding: 0;">
-      <img src="screenshots/demo.gif" style="max-height: 400px; width: auto; display: block;" alt="Flutter Status Overlay Demo">
+      <img src="https://raw.githubusercontent.com/larivasi/flutter_status_overlay/main/screenshots/demo.gif" style="max-height: 400px; width: auto; display: block;" alt="Flutter Status Overlay Demo">
     </td>
   </tr>
 </table>
