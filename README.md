@@ -19,6 +19,27 @@ Flutter Status Overlay is a customizable, easy-to-use package for displaying sta
   </tr>
 </table>
 
+## Demonstration
+
+<p align="center">
+  <img src="screenshots/demo.gif" alt="Flutter Status Overlay Demo">
+</p>
+
+This demonstration showcases the key features of Flutter Status Overlay:
+
+- First, two status messages are displayed:
+    1. A success message
+    2. An error message
+       Both automatically close after a set duration (5 seconds in this example)
+
+- Next, two more status messages are shown:
+    1. Another success message
+    2. Another error message
+       These can be dismissed by tapping anywhere on the screen
+
+This demo illustrates the flexibility of Flutter Status Overlay, allowing for both timed and user-initiated dismissal of status messages.
+
+[View full video](https://github.com/larivasi/flutter_status_overlay/raw/main/screenshots/demo.mp4)
 
 ## Installation
 
