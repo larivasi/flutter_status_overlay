@@ -1,3 +1,9 @@
+## 0.0.4
+
+* Improved image layout in README using a table structure
+* Updated image URLs to use direct GitHub links for better compatibility with pub.dev
+* Enhanced documentation clarity
+
 ## 0.0.3
 
 * Fixed image display issues in README on pub.dev
